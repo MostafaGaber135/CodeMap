@@ -8,7 +8,6 @@ import {
   Stack,
   Divider,
 } from "@mui/material";
-import FavoriteIcon from "@mui/icons-material/Favorite";
 
 export default function Footer() {
   return (

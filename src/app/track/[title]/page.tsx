@@ -24,7 +24,6 @@ export default function TrackPage() {
 
   const [videos, setVideos] = useState<VideoResource[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
-  const [trackTitle, setTrackTitle] = useState<string>('');
 
   useEffect(() => {
     async function fetchVideos() {
@@ -37,12 +36,10 @@ export default function TrackPage() {
       if (!pathData || pathError) {
         console.error('TrackPage: No learning path found for slug:', slug);
         setVideos([]);
-        setTrackTitle('');
         setLoading(false);
         return;
       }
 
-      setTrackTitle(pathData.title);
 
       const { data: videosData, error: videosError } = await supabase
         .from('learning_videos')

@@ -2,7 +2,6 @@ import React from 'react';
 import { Box, Typography, Card, CardContent, Container, Stack } from '@mui/material';
 import LanguageIcon from '@mui/icons-material/Language';
 import SchoolIcon from '@mui/icons-material/School';
-import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import UpdateIcon from '@mui/icons-material/Update';
 import PeopleIcon from '@mui/icons-material/People';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
