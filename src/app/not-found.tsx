@@ -58,6 +58,7 @@ const Lamp = () => (
           boxShadow: '0 0 25px 7px rgb(127 255 255 / 80%), 0 0 64px 47px rgba(0,255,255,0.5), 0px 0 30px 15px rgba(0,255,255,0.2)',
         }} />
       </Box>
+
       <Box className="light" sx={{
         width: 200, height: 0,
         borderBottom: '900px solid rgb(44 255 255 / 24%)',
@@ -83,7 +84,7 @@ export default function NotFoundLamp() {
       position: 'relative',
       fontFamily: "'Montserrat', 'Nunito Sans', sans-serif",
       overflow: 'hidden',
-      width: '100%', // FIXED: remove horizontal scroll!
+      width: '100%',
       py: { xs: 0, md: 8 }
     }}>
       <ParticleLayer width="3px" height="3px" duration="150s" zIndex={0} />
@@ -134,7 +135,7 @@ export default function NotFoundLamp() {
               mx: 'auto',
               textShadow: '0 1px 5px #0008',
             }}>
-              We're sorry, the page you were looking for isn't found here. The link you followed may either be broken or no longer exists.
+              We&#39;re sorry, the page you were looking for isn&#39;t found here. The link you followed may either be broken or no longer exists.
               Please try again, or take a look at our homepage.
             </Typography>
           </Box>
