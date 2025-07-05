@@ -1,7 +1,6 @@
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
 import { ThemeProvider, CssBaseline } from "@mui/material";
 import { Geist, Geist_Mono } from "next/font/google";
-import type { Metadata } from "next";
 import theme from "@/theme";
 import "./globals.css";
 import Footer from "./_components/footer/page";
