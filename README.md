@@ -1,36 +1,88 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Code Map
 
-## Getting Started
+[![Live Demo](https://img.shields.io/badge/Live-Demo-blue)](https://code-map-seven.vercel.app/)
 
-First, run the development server:
+**Code Map** is a modern web application designed to organize and simplify learning for developers by showcasing structured learning paths and roadmaps. Easily browse curated tracks based on technologies with a simple and interactive UI.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ✨ Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Browse structured learning paths and roadmaps for developers.
+- Modern UI built with Next.js.
+- Data storage and management using Supabase.
+- Responsive design (works perfectly on all screens).
+- Fast performance and seamless deployment via Vercel.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🚀 Live Demo
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+[https://code-map-seven.vercel.app/](https://code-map-seven.vercel.app/)
 
-## Learn More
+## 🛠️ Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+- **Frontend:** [Next.js](https://nextjs.org/)
+- **Backend as a Service:** [Supabase](https://supabase.com/)
+- **Deployment:** [Vercel](https://vercel.com/)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📦 Getting Started
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+To run the project locally, follow these steps:
 
-## Deploy on Vercel
+1. **Clone the repository**
+    ```bash
+    git clone https://github.com/username/code-map.git
+    cd code-map
+    ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. **Install dependencies**
+    ```bash
+    npm install
+    ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3. **Setup Supabase**
+    - Create a new project on [Supabase](https://supabase.com/).
+    - Set up the required tables (e.g., `learning_paths`, `technologies`, etc.).
+    - Get your Supabase project API keys (`SUPABASE_URL`, `SUPABASE_ANON_KEY`).
+
+4. **Create a `.env.local` file**
+    ```env
+    NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+    NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+    ```
+
+5. **Run the development server**
+    ```bash
+    npm run dev
+    ```
+
+6. Open [http://localhost:3000](http://localhost:3000) in your browser to see the app.
+
+## 🗂️ Folder Structure
+
+```text
+app/
+├── _components/              # Reusable React components
+│
+├── learningPaths/            # Pages related to all learning paths
+│   ├── page.tsx.tsx
+│   └── TrackHeader/
+│       └── page.tsx
+│
+├── TrackRoadmap/             # Roadmap views for tracks
+│   ├── page.tsx
+│   └── TrackStep/
+│       └── page.tsx
+│
+├── (Legal & Policies)/       # Legal and help pages
+│   ├── help/
+│   │   └── page.tsx
+│   ├── privacy/
+│   │   └── page.tsx
+│   └── terms/
+│       └── page.tsx
+│
+├── track\[title]/            # Dynamic routing for tracks
+│   └── [subtrackId]/         # Nested dynamic routing for subtracks
+│       ├── page.tsx
+│       └── index.tsx
+│
+├── utils/
+│   └── supabaseClient.ts     # Supabase client configuration
