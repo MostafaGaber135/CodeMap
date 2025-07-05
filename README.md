@@ -14,7 +14,7 @@
 
 ## 🚀 Live Demo
 
-[https://code-map-seven.vercel.app/](https://code-map-seven.vercel.app/)
+[https://code-map-seven.vercel.app/](https://code-map-psi.vercel.app/)
 
 ## 🛠️ Tech Stack
 
