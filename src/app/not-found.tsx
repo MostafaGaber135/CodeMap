@@ -25,9 +25,9 @@ const ParticleLayer = ({ width = '3px', height = '3px', duration = '150s', zInde
 const Lamp = () => (
   <Box className="lamp__wrap" sx={{
     position: 'absolute',
-    left: '50%',
+    left: '42%',
     top: 0,
-    transform: 'translateX(-50%)',
+    transform: 'translateX(-42%)',
     width: 300,
     display: 'flex',
     flexDirection: 'column',
@@ -38,9 +38,9 @@ const Lamp = () => (
     '@media (max-width:1400px)': { zoom: 0.5 },
     '@media (max-width:650px)': { zoom: 0.6 },
   }}>
-    <Box className="lamp" sx={{ width: 300, position: 'relative', zIndex: 2 }}>
+    <Box className="lamp" sx={{ width: 300, position: 'relative',   zIndex: 2 }}>
       <Box className="cable" sx={{
-        width: 8, height: 248, mx: 'auto',
+        width: 8, height: 248, mx: ' 100px', mt:'-30px',
         background: 'linear-gradient(rgb(32 148 218 / 70%), rgb(193 65 25))'
       }} />
       <Box className="cover" sx={{
