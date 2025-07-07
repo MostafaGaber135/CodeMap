@@ -38,7 +38,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "CodeMap – Visualize Your Codebase Instantly",
+    title: "CodeMap",
     description: "Visualize your code structure with CodeMap by Mostafa Gaber.",
     images: ["/cover-og.png"],
   },
