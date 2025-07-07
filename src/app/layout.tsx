@@ -15,13 +15,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "CodeMap – Visualize Your Codebase Instantly",
+  title: "CodeMap",
   description: "CodeMap is the best tool to visualize and explore your codebase structure. Created by Mostafa Gaber.",
   icons: [
     { rel: "icon", type: "image/x-icon", url: "/favicon.ico" },
   ],
   openGraph: {
-    title: "CodeMap – Visualize Your Codebase Instantly",
+    title: "CodeMap",
     description: "Explore, analyze and visualize your code structure easily with CodeMap.",
     url: "https://code-map-psi.vercel.app/",
     siteName: "CodeMap",
