@@ -16,21 +16,21 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "CodeMap",
-  description: "CodeMap is the best tool to visualize and explore your codebase structure. Created by Mostafa Gaber.",
-  icons: [
-    { rel: "icon", type: "image/x-icon", url: "/favicon.ico" },
-  ],
+  description:
+    "Discover interactive programming roadmaps and visualize your codebase structure with CodeMap. Perfect for developers, learners, and teams. Created by Mostafa Gaber.",
+  icons: [{ rel: "icon", type: "image/x-icon", url: "/favicon.ico" }],
   openGraph: {
     title: "CodeMap",
-    description: "Explore, analyze and visualize your code structure easily with CodeMap.",
+    description:
+      "Explore, analyze, and visualize your code structure or find your perfect programming learning path with CodeMap.",
     url: "https://code-map-psi.vercel.app/",
     siteName: "CodeMap",
     images: [
       {
-        url: "/favicon.ico",
+        url: "/cover-og.png",
         width: 1200,
         height: 630,
-        alt: "CodeMap OpenGraph Image",
+        alt: "CodeMap Roadmap and Codebase Visualization",
       },
     ],
     locale: "en_US",
@@ -39,12 +39,31 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "CodeMap",
-    description: "Visualize your code structure with CodeMap by Mostafa Gaber.",
+    description:
+      "Visualize your code structure and follow interactive programming roadmaps with CodeMap by Mostafa Gaber.",
     images: ["/cover-og.png"],
   },
   robots: "index, follow",
   keywords: [
-    "CodeMap", "code visualization", "code explorer", "codebase analysis", "Mostafa Gaber"
+    "code map",
+    "CodeMap",
+    "codemap",
+    "Code Map",
+    "programming roadmap",
+    "developer roadmap",
+    "learning path for programmers",
+    "coding roadmap",
+    "software development guide",
+    "learn programming online",
+    "web development roadmap",
+    "front end roadmap",
+    "back end roadmap",
+    "full stack roadmap",
+    "programming learning paths",
+    "coding courses map",
+    "tech career path",
+    "beginner programming roadmap",
+    "advanced developer roadmap"
   ],
   authors: [{ name: "Mostafa Gaber", url: "https://code-map-psi.vercel.app/" }],
   generator: "Next.js",
@@ -66,13 +85,16 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebSite",
-              "name": "CodeMap",
-              "url": "https://code-map-psi.vercel.app/",
-              "author": {
+              name: "CodeMap",
+              url: "https://code-map-psi.vercel.app/",
+              author: {
                 "@type": "Person",
-                "name": "Mostafa Gaber"
-              }
-            })
+                name: "Mostafa Gaber",
+                url: "https://code-map-psi.vercel.app/",
+              },
+              description:
+                "Interactive programming roadmaps and codebase structure visualization for developers and learners.",
+            }),
           }}
         />
       </head>
